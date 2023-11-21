@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>карточка в наличии</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20231121121342" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231121121342">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Інтернет магазин UNISET">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container d-flex">
+					<btn type="button" class="icon-menu"><span></span></btn>
+					<a href="#" class="top-header__logo">
+						<img src="img/logo.svg" alt="Логотип компанії" width="130" height="50">
+					</a>
+					<a data-popup="#thanks" data-da=".top-header__menu-mobile, 991" href="#" class="top-header__corporate btn btn-blue">
+						<svg class="top-header__corporate-icon" width="26" height="24">
+							<use xlink:href="img/icons/icons.svg#arrow-left-white"></use>
+						</svg>
+						<span>Корпоративний сайт</span>
+					</a>
+					<div data-da=".top-header__menu-mobile, 991, 3" class="top-header__call">
+						<a href="tel:0733903303" class="top-header__phone link-phone">
+							<svg class="link-phone-icon" width="16" height="16">
+								<use xlink:href="img/icons/icons.svg#phone-blue"></use>
+							</svg>
+							<span>073-390-33-03</span>
+						</a>
+						<a href="tel:0683903303" class="top-header__phone link-phone">
+							<svg class="link-phone-icon" width="16" height="16">
+								<use xlink:href="img/icons/icons.svg#phone-blue"></use>
+							</svg>
+							<span>068-390-33-03</span>
+						</a>
+						<a data-popup="#error" href="#" class="top-header__order-call">Замовити дзвінок</a>
+					</div>
+					<nav class="header__menu menu">
+						<ul data-da="._menu, 991, 1" class="menu__list">
+							<li><a href="#">Виробники</a></li>
+							<li><a href="#">Умова згоди</a></li>
+							<li><a href="#">Оплата і доставка</a></li>
+							<li><a href="#">Контакти</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="top-header__search">
+						<svg class="bottom-header__search-icon" width="26" height="26">
+							<use xlink:href="img/icons/icons.svg#search"></use>
+						</svg>
+					</button>
+					<div class="top-header__lang lang">
+						<div class="lang__selected">
+							<span>UA</span>
+							<svg class="lang__selected-icon" width="10" height="6">
+								<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+							</svg>
+						</div>
+						<ul class="lang__dropdown">
+							<li><a href="#" class="_active">UA</a></li>
+							<li><a href="#">RU</a></li>
+						</ul>
+					</div>
+					<div data-spollers="991,max" class="top-header__menu-mobile mobile-menu">
+						<div class="mobile-menu__head d-flex">
+							<span>Меню</span>
+							<button type="button" class="mobile-menu__close cntr">
+								<svg class="mobile-menu__close-icon" width="14" height="14">
+									<use xlink:href="img/icons/icons.svg#close"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="mobile-menu__spoller _catalog">
+							<span data-spoller class="mobile-menu__label d-flex">
+								Каталог
+								<svg class="mobile-menu__label-icon" width="10" height="8">
+									<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+								</svg>
+							</span>
+							<span></span>
+						</div>
+						<div class="mobile-menu__spoller _menu">
+							<span data-spoller class="mobile-menu__label d-flex">
+								Додаткова інформація
+								<svg class="mobile-menu__label-icon" width="10" height="8">
+									<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+								</svg>
+							</span>
+							<span></span>
+						</div>
+						<ul class="mobile-menu__socials socials">
+							<li>
+								<a href="#" class="cntr">
+									<svg class="instagram" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="cntr">
+									<svg class="facebook" width="9" height="18">
+										<use xlink:href="img/icons/icons.svg#facebook"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom bottom-header">
+				<div class="bottom-header__container d-flex">
+					<div class="header-catalog">
+						<button type="button" class="header-catalog__button d-flex">
+							<svg class="header-catalog__button-icon-left" width="16" height="15">
+								<use xlink:href="img/icons/icons.svg#catalog"></use>
+							</svg>
+							<span>Каталог товарів</span>
+							<svg class="header-catalog__button-icon-right" width="10" height="8">
+								<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+							</svg>
+						</button>
+						<ul data-spollers="991,max" data-da="._catalog, 991, 1" class="header-catalog__list">
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Привідна техніка
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Модульне обладнання
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Пуск та захист двигунів
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Промислові автоматичні вимикачі
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Пристрої керування та сигналізації
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Обладнання промислової автоматизації
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Реле, таймери, блоки живлення, вимірювальні прилади
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Шафи та кліматизація
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Високовольтні комірки
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Трансформатори
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom-header__brands brands-header">
+						<button type="button" class="brands-header__button d-flex">
+							<span>Бренди</span>
+							<svg class="brands-header__button-icon" width="10" height="8">
+								<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+							</svg>
+						</button>
+						<ul class="brands-header__items">
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/danfuss.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/eaton.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/emtas.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/morek.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/oztekfen.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/ome.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/quick.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/rittal.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/sew.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/unimotor.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/weidmuller.svg" alt="img"></a>
+							</li>
+						</ul>
+					</div>
+					<form data-da=".header__top, 991" action="#" class="bottom-header__search search-header">
+						<div class="search-header__form d-flex">
+							<input type="text" name="search">
+							<button type="submit">
+								<svg class="bottom-header__search-icon" width="26" height="26">
+									<use xlink:href="img/icons/icons.svg#search"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="search-header__result">
+							<a href="#" class="search-header__product">
+								<div class="search-header__img">
+									<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+								</div>
+								<div class="search-header__title">Радіатор сталевий Krafter 22 тип 500x1000 нижнє підключення</div>
+								<span class="search-header__price">4 781 ₴</span>
+							</a>
+							<a href="#" class="search-header__product">
+								<div class="search-header__img">
+									<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+								</div>
+								<div class="search-header__title">Радіатор сталевий Krafter 22 тип 500x1000 нижнє підключення</div>
+								<span class="search-header__price">4 781 ₴</span>
+							</a>
+						</div>
+					</form>
+					<a data-popup="#product-in-basket" href="#" class="bottom-header__scales cntr">
+						<span class="cntr">1</span>
+						<svg class="bottom-header__scales-icon" width="26" height="26">
+							<use xlink:href="img/icons/icons.svg#scales"></use>
+						</svg>
+					</a>
+					<a data-popup="#leave-review" href="#" class="bottom-header__cart cntr">
+						<span class="cntr">1</span>
+						<svg class="bottom-header__cart-icon" width="26" height="26">
+							<use xlink:href="img/icons/icons.svg#cart"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</header>
+		<main class="home-page">
+			<nav aria-label="breadcrumb">
+				<div class="breadcrumb__container">
+					<ol class="breadcrumb">
+						<li class="breadcrumb__item"><a href="#">Головна</a></li>
+						<li class="breadcrumb__item"><a href="#">Привідна техніка</a></li>
+						<li class="breadcrumb__item"><a href="#">Пристрої плавного пуску</a></li>
+						<li class="breadcrumb__item _active" aria-current="page">Пристрій плавного пуску Eaton DS7-342SX007N0-N 3kW 230V-480V</li>
+					</ol>
+				</div>
+			</nav>
+			<div class="home-page__product product-card">
+				<div class="product-card__container">
+					<h1 class="product-card__title title-page">Пристрій плавного пуску Eaton DS7-342SX007N0-N 3kW 230V-480V</h1>
+					<div class="product-card__row">
+						<div class="product-card__images">
+							<div class="slider-card swiper">
+								<button type="button" class="slider-card__nav slider-card__nav--prev"></button>
+								<div data-gallery class="slider-card__wrapper swiper-wrapper">
+									<a href="img/card/01.png" class="slider-card__slide swiper-slide">
+										<div class="slider-card__sales">
+											<div class="sale sale-yellow">Популярне</div>
+										</div>
+										<div class="slider-card__img cntr">
+											<picture><source srcset="img/card/01.webp" type="image/webp"><img src="img/card/01.png" alt="img"></picture>
+										</div>
+									</a>
+									<a href="img/card/01.png" class="slider-card__slide swiper-slide">
+										<div class="slider-card__sales">
+											<div class="sale sale-yellow">Популярне</div>
+										</div>
+										<div class="slider-card__img cntr">
+											<picture><source srcset="img/card/01.webp" type="image/webp"><img src="img/card/01.png" alt="img"></picture>
+										</div>
+									</a>
+								</div>
+								<button type="button" class="slider-card__nav slider-card__nav--next"></button>
+							</div>
+							<div class="slider-card__pagging pagging pagging-white"></div>
+							<div class="subslider-card swiper">
+								<div class="subslider-card__wrapper swiper-wrapper">
+									<div class="subslider-card__slide swiper-slide cntr">
+										<picture><source srcset="img/card/02.webp" type="image/webp"><img src="img/card/02.png" alt="img"></picture>
+									</div>
+									<div class="subslider-card__slide swiper-slide cntr">
+										<picture><source srcset="img/card/02.webp" type="image/webp"><img src="img/card/02.png" alt="img"></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product-card__info info-card">
+							<div class="info-card__row">
+								<div class="info-card__available _active">У наявності</div>
+								<div class="info-card__article">Артикул: 134927</div>
+							</div>
+							<div class="info-card__row">
+								<div class="info-card__producer">Виробник: <a href="#">Eaton</a></div>
+								<div class="info-card__rating">
+									<div class="info-card__stars"></div>
+									<a href="#" class="info-card__reviews">2 відгука</a>
+								</div>
+							</div>
+							<div class="info-card__block">
+								<div class="info-card__label">Номінальний струм AC-53, А:</div>
+								<div class="info-card__current">
+									<div class="info-card__current-selected">
+										<span>4</span>
+										<svg class="info-card__current-selected-icon" width="12" height="8">
+											<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+										</svg>
+									</div>
+									<div class="info-card__dropdown">
+										<a href="#">1</a>
+										<a href="#">2</a>
+										<a href="#">3</a>
+										<a href="#">5</a>
+									</div>
+								</div>
+							</div>
+							<div class="info-card__block">
+								<div class="info-card__label">Номінальна потужність, кВт:</div>
+								<div class="info-card__power">
+									<a href="#" class="info-card__power_item _active">1.5</a>
+									<a href="#" class="info-card__power_item">4</a>
+									<div class="info-card__power_item _disabled">5.5</div>
+									<a href="#" class="info-card__power_item">7.5</a>
+									<a href="#" class="info-card__power_item">11</a>
+									<a href="#" class="info-card__power_item">15</a>
+									<a href="#" class="info-card__power_item">22</a>
+									<a href="#" class="info-card__power_item">30</a>
+									<a href="#" class="info-card__power_item">37</a>
+									<a href="#" class="info-card__power_item">45</a>
+									<a href="#" class="info-card__power_item">55</a>
+									<a href="#" class="info-card__power_item">75</a>
+									<a href="#" class="info-card__power_item">90</a>
+									<a href="#" class="info-card__power_item">110</a>
+								</div>
+							</div>
+							<div class="info-card__block">
+								<div class="info-card__label">Напруга управління:</div>
+								<div class="info-card__power">
+									<a href="#" class="info-card__power_item">24B AC/DC</a>
+									<a href="#" class="info-card__power_item _active">24B SmartWire-DT</a>
+								</div>
+							</div>
+							<div class="info-card__quantity">
+								<div class="info-card__label">Кількість товару:</div>
+								<div data-quantity class="quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-value autocomplete="off" type="text" name="quantity" value="1">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+							</div>
+							<div class="info-card__price">
+								<div class="info-card__price-old">6 906,75 ₴</div>
+								<div class="info-card__price-new">6 505,55 ₴</div>
+								<span>ціна за 1 од.</span>
+							</div>
+							<div class="info-card__actions">
+								<a href="#" class="info-card__buy btn btn-blue _active">Купити</a>
+								<button type="button" class="info-card__buy-one-click btn btn-one-click _active">Купити в 1 клік</button>
+								<a data-da=".info-card__price, 479" href="#" class="info-card__weight cntr _active">
+									<svg class="scales" width="26" height="26">
+										<use xlink:href="img/icons/icons.svg#scales-green"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="support">
+								<div class="support__column">
+									<div class="support__label">Залишилися питання!?</div>
+									<p class="support__text">Зателефонуйте і наш менеджер Вам допоможе</p>
+								</div>
+								<a href="tel:+380733903303" class="support__call">+38 073-390-33-03</a>
+							</div>
+						</div>
+					</div>
+					<div class="product-card__details details-card">
+						<ul class="details-card__nav">
+							<li><a data-goto="#desc" data-goto-header href="#" class="_navigator-active">Опис</a></li>
+							<li><a data-goto="#characteristics" data-goto-header href="#">Характеристики</a></li>
+							<li><a data-goto="#reviews" data-goto-header href="#">Відгуки</a></li>
+							<li><a data-goto="#video" data-goto-header href="#">Відео</a></li>
+							<li><a data-goto="#files" data-goto-header href="#">Файли</a></li>
+						</ul>
+						<div class="details-card__row">
+							<div class="details-card__about">
+								<div id="desc" class="details-card__block">
+									<div class="details-card__caption">Опис</div>
+									<div class="details-card__desc">
+										<p>Пристрій плавного пуску DS7 призначений для плавного пуску та зупинки електродвигунів від 1,1 до 110 кВт з регулюванням по 2м фаз. По завершенні запуску тиристори шунтуються за допомогою вбудованих контактів. Пристрій відрізняється простим керуванням і має всього 3 налаштування – U-Start (стартова напруга у відсотках), а також t-Start (час виходу на номінальну напругу) та t-Stop (час зниження напруги до стартової відключення) в секундах. Два світлодіоди повідомляють про стан пристрою, два релейні виходи (готовність до роботи та вихід на номінальну напругу) можуть використовуватися в керуючих ланцюгах. Крім того, доступні пристрої з напругою ланцюгів управління 24, AC/DC або 110/230 В. За рахунок використання запатентованого методу асиметричного управління тиристорами двигун запускається плавно, але зберігає при цьому більш високий момент обертання, чого не дозволяють інші подібні пристрої. Основні сфери застосування - насоси, вентилятори і невеликі конвейєри. </p>
+										<ul>
+											<li>Пристрій <b>плавного</b> пуску</li>
+											<li>Пристрій плавного пуску</li>
+										</ul>
+										<br>
+										<p>Пристрій</p>
+										<ol>
+											<li>Пристрій <a href="#">плавного</a> пуску</li>
+											<li>Пристрій <strong>плавного</strong> пуску</li>
+										</ol>
+									</div>
+								</div>
+								<div id="characteristics" class="details-card__block">
+									<div class="details-card__caption">Характеристики</div>
+									<div class="details-card__characteristics characteristics-card">
+										<div class="characteristics-card__head d-flex">
+											<span class="characteristics-card__label">Серія</span>
+											<span class="characteristics-card__value">DS7</span>
+										</div>
+										<div class="characteristics-card__line d-flex">
+											<span class="characteristics-card__label">Номінальна потужність, кВт</span>
+											<span class="characteristics-card__value">1.5</span>
+										</div>
+										<div class="characteristics-card__head d-flex">
+											<span class="characteristics-card__label">Напруга управління</span>
+											<span class="characteristics-card__value">110/230В AC</span>
+										</div>
+										<div class="characteristics-card__line d-flex">
+											<span class="characteristics-card__label">Номінальний струм AC-53, А</span>
+											<span class="characteristics-card__value">4</span>
+										</div>
+									</div>
+								</div>
+								<div id="reviews" class="details-card__block">
+									<div class="details-card__caption">Відгуки</div>
+									<div class="details-card__reviews reviews-card">
+										<div class="reviews-card__top d-flex">
+											<div class="reviews-card__rating d-flex">
+												<div class="reviews-card__stars"></div>
+												<div class="reviews-card__grade">4 <span>(2 відгука)</span></div>
+											</div>
+											<button class="reviews-card__add-review btn btn-blue">Додати відгук</button>
+										</div>
+										<div class="reviews-card__item item-review">
+											<div class="item-review__info">
+												<div class="item-review__user">
+													<div class="item-review__avatar cntr">P</div>
+													<div class="item-review__column">
+														<div class="item-review__username">Роман Іванов</div>
+														<div class="item-review__rating"></div>
+													</div>
+												</div>
+												<div class="item-review__data">11.06.22</div>
+											</div>
+											<div class="item-review__content">Дуже гарний пристрій. Усе працює</div>
+										</div>
+										<div class="reviews-card__item item-review">
+											<div class="item-review__info">
+												<div class="item-review__user">
+													<div class="item-review__avatar cntr">Є</div>
+													<div class="item-review__column">
+														<div class="item-review__username">Євген Лисак</div>
+														<div class="item-review__rating"></div>
+													</div>
+												</div>
+												<div class="item-review__data">11.06.22</div>
+											</div>
+											<div class="item-review__content">Вже кілька разів замовляв різний товар у цьому магазині. Все на найвищому рівні. Якість товару – дуже хороша. Менеджери компетентні, підкажуть, якщо є якісь питання щодо товару. Ціни приємні. Рекомендую! </div>
+										</div>
+									</div>
+								</div>
+								<div id="video" class="details-card__block">
+									<div class="details-card__caption">Відео</div>
+									<div data-popup="#po-video" data-popup-youtube="4NzlbkcgQqY" d class="details-card__video">
+										<picture><source srcset="img/video.webp" type="image/webp"><img src="img/video.jpg" alt="video"></picture>
+										<button type="button" class="video-play"></button>
+									</div>
+								</div>
+								<div id="files" class="details-card__block">
+									<div class="details-card__caption">Файли</div>
+									<ul class="details-card__list">
+										<li>
+											<span>Каталог 2019, Електротехнічне обладнання</span>
+											<a href="#">
+												<span>Завантажити PDF</span>
+												<svg class="details-card__list-icon" width="22" height="16">
+													<use xlink:href="img/icons/icons.svg#arrow-green"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<aside class="product-card__aside aside-product">
+								<div class="aside-product__top">
+									<div class="aside-product__img cntr">
+										<picture><source srcset="img/card/03.webp" type="image/webp"><img src="img/card/03.png" alt="img"></picture>
+									</div>
+								</div>
+								<div class="aside-product__content">
+									<a href="#" class="aside-product__title">Пристрій плавного пуску Eaton DS7-342SX007N0-N 3kW 230V-480V</a>
+									<div class="aside-product__available">У наявності</div>
+									<div class="aside-product__price">
+										<div class="aside-product__price-old">6 906,75 ₴</div>
+										<div class="aside-product__price-new">6 505,55 ₴</div>
+									</div>
+									<button type="button" class="aside-product__buy btn btn-blue">Купити</button>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="home-page__products products-carousel">
+				<div class="products-carousel__container">
+					<div class="products-carousel__title title-section">схожі товари</div>
+					<div class="products-carousel__slider swiper">
+						<div class="products-carousel__wrapper swiper-wrapper">
+							<div class="product-cart swiper-slide">
+								<div class="product-cart__picture">
+									<div class="product-cart__sales">
+										<div class="sale sale-red">Знижка %</div>
+									</div>
+									<a href="#" class="product-cart__img">
+										<picture><source srcset="img/products/01.webp" type="image/webp"><img data-bg="img/products/01.png" src="img/products/01.png" alt="img"></picture>
+									</a>
+								</div>
+								<div class="product-cart__content">
+									<div class="product-cart__head">
+										<div class="product-cart__row">
+											<div>
+												<div class="product-cart__reviews d-flex">
+													<div class="product-cart__stars">
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-gray" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-gray"></use>
+														</svg>
+													</div>
+													<a href="#" class="product-cart__quantity">15 відгуків</a>
+												</div>
+												<div class="status green">У наявності</div>
+											</div>
+											<a href="#" class="product-cart__scales cntr">
+												<svg class="scales" width="26" height="26">
+													<use xlink:href="img/icons/icons.svg#scales-green"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+									</div>
+									<div class="product-cart__main">
+										<div class="product-cart__line">
+											<span>Серія</span>
+											<span>Фронтальний</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Напруга на вході, В</span>
+											<span>230</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Макс. робочий струм, А</span>
+											<span>1.2</span>
+										</div>
+									</div>
+									<div class="product-cart__footer">
+										<div class="product-cart__price d-flex">
+											<div class="product-cart__old-price">5 677,50 ₴</div>
+											<span>5 588,50 ₴</span>
+										</div>
+										<button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+									</div>
+								</div>
+							</div>
+							<div class="product-cart swiper-slide">
+								<div class="product-cart__picture">
+									<a href="#" class="product-cart__img">
+										<picture><source srcset="img/products/02.webp" type="image/webp"><img data-bg="img/products/02.png" src="img/products/02.png" alt="img"></picture>
+									</a>
+								</div>
+								<div class="product-cart__content">
+									<div class="product-cart__head">
+										<div class="product-cart__row">
+											<div>
+												<button type="button" class="product-cart__leave">
+													<svg class="product-cart__leave-icon" width="18" height="18">
+														<use xlink:href="img/icons/icons.svg#star-blue"></use>
+													</svg>
+													<span>Залишити відгук</span>
+												</button>
+												<div class="status red">Під замовлення</div>
+											</div>
+											<a href="#" class="product-cart__scales cntr _active">
+												<svg class="scales" width="26" height="26">
+													<use xlink:href="img/icons/icons.svg#scales-green"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+									</div>
+									<div class="product-cart__main">
+										<div class="product-cart__line">
+											<span>Серія</span>
+											<span>Фронтальний</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Напруга на вході, В</span>
+											<span>230</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Макс. робочий струм, А</span>
+											<span>1.2</span>
+										</div>
+									</div>
+									<div class="product-cart__footer">
+										<div class="product-cart__price d-flex">
+											<span>6 893,33 ₴</span>
+										</div>
+										<button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+									</div>
+								</div>
+							</div>
+							<div class="product-cart swiper-slide">
+								<div class="product-cart__picture">
+									<a href="#" class="product-cart__img">
+										<picture><source srcset="img/products/03.webp" type="image/webp"><img data-bg="img/products/03.png" src="img/products/03.png" alt="img"></picture>
+									</a>
+								</div>
+								<div class="product-cart__content">
+									<div class="product-cart__head">
+										<div class="product-cart__row">
+											<div>
+												<div class="product-cart__reviews d-flex">
+													<div class="product-cart__stars">
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-gray" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-gray"></use>
+														</svg>
+													</div>
+													<a href="#" class="product-cart__quantity">15 відгуків</a>
+												</div>
+												<div class="status green">У наявності</div>
+											</div>
+											<a href="#" class="product-cart__scales cntr">
+												<svg class="scales" width="26" height="26">
+													<use xlink:href="img/icons/icons.svg#scales-green"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+									</div>
+									<div class="product-cart__main">
+										<div class="product-cart__line">
+											<span>Серія</span>
+											<span>Фронтальний</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Напруга на вході, В</span>
+											<span>230</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Макс. робочий струм, А</span>
+											<span>1.2</span>
+										</div>
+									</div>
+									<div class="product-cart__footer">
+										<div class="product-cart__price d-flex">
+											<span>Ціна під запит</span>
+										</div>
+										<button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+									</div>
+								</div>
+							</div>
+							<div class="product-cart swiper-slide">
+								<div class="product-cart__picture">
+									<div class="product-cart__sales">
+										<div class="sale sale-green">Новинка</div>
+										<div class="sale sale-red">Знижка %</div>
+										<div class="sale sale-yellow">Популярне</div>
+									</div>
+									<a href="#" class="product-cart__img">
+										<picture><source srcset="img/products/04.webp" type="image/webp"><img data-bg="img/products/04.png" src="img/products/04.png" alt="img"></picture>
+									</a>
+								</div>
+								<div class="product-cart__content">
+									<div class="product-cart__head">
+										<div class="product-cart__row">
+											<div>
+												<div class="product-cart__reviews d-flex">
+													<div class="product-cart__stars">
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-gray" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-gray"></use>
+														</svg>
+													</div>
+													<a href="#" class="product-cart__quantity">15 відгуків</a>
+												</div>
+												<div class="status green">У наявності</div>
+											</div>
+											<a href="#" class="product-cart__scales cntr">
+												<svg class="scales" width="26" height="26">
+													<use xlink:href="img/icons/icons.svg#scales-green"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+									</div>
+									<div class="product-cart__main">
+										<div class="product-cart__line">
+											<span>Серія</span>
+											<span>Фронтальний</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Напруга на вході, В</span>
+											<span>230</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Макс. робочий струм, А</span>
+											<span>1.2</span>
+										</div>
+									</div>
+									<div class="product-cart__footer">
+										<div class="product-cart__price d-flex">
+											<div class="product-cart__old-price">5 677,50 ₴</div>
+											<span>5 588,50 ₴</span>
+										</div>
+										<button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+									</div>
+								</div>
+							</div>
+							<div class="product-cart swiper-slide">
+								<div class="product-cart__picture">
+									<div class="product-cart__sales">
+										<div class="sale sale-red">Знижка %</div>
+									</div>
+									<a href="#" class="product-cart__img">
+										<picture><source srcset="img/products/04.webp" type="image/webp"><img data-bg="img/products/04.png" src="img/products/04.png" alt="img"></picture>
+									</a>
+								</div>
+								<div class="product-cart__content">
+									<div class="product-cart__head">
+										<div class="product-cart__row">
+											<div>
+												<div class="product-cart__reviews d-flex">
+													<div class="product-cart__stars">
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-gray" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-gray"></use>
+														</svg>
+													</div>
+													<a href="#" class="product-cart__quantity">15 відгуків</a>
+												</div>
+												<div class="status green">У наявності</div>
+											</div>
+											<a href="#" class="product-cart__scales cntr">
+												<svg class="scales" width="26" height="26">
+													<use xlink:href="img/icons/icons.svg#scales-green"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+									</div>
+									<div class="product-cart__main">
+										<div class="product-cart__line">
+											<span>Серія</span>
+											<span>Фронтальний</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Напруга на вході, В</span>
+											<span>230</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Макс. робочий струм, А</span>
+											<span>1.2</span>
+										</div>
+									</div>
+									<div class="product-cart__footer">
+										<div class="product-cart__price d-flex">
+											<span>6 893,33 ₴</span>
+										</div>
+										<button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+									</div>
+								</div>
+							</div>
+							<div class="product-cart swiper-slide">
+								<div class="product-cart__picture">
+									<div class="product-cart__sales">
+										<div class="sale sale-red">Знижка %</div>
+									</div>
+									<a href="#" class="product-cart__img">
+										<picture><source srcset="img/products/02.webp" type="image/webp"><img data-bg="img/products/02.png" src="img/products/02.png" alt="img"></picture>
+									</a>
+								</div>
+								<div class="product-cart__content">
+									<div class="product-cart__head">
+										<div class="product-cart__row">
+											<div>
+												<div class="product-cart__reviews d-flex">
+													<div class="product-cart__stars">
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-gray" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-gray"></use>
+														</svg>
+													</div>
+													<a href="#" class="product-cart__quantity">15 відгуків</a>
+												</div>
+												<div class="status green">У наявності</div>
+											</div>
+											<a href="#" class="product-cart__scales cntr">
+												<svg class="scales" width="26" height="26">
+													<use xlink:href="img/icons/icons.svg#scales-green"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+									</div>
+									<div class="product-cart__main">
+										<div class="product-cart__line">
+											<span>Серія</span>
+											<span>Фронтальний</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Напруга на вході, В</span>
+											<span>230</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Макс. робочий струм, А</span>
+											<span>1.2</span>
+										</div>
+									</div>
+									<div class="product-cart__footer">
+										<div class="product-cart__price d-flex">
+											<span>Ціна під запит</span>
+										</div>
+										<button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-carousel__pagging pagging pagging-white"></div>
+					</div>
+					<div class="products-carousel__nav">
+						<button type="button" class="products-carousel__nav-prev nav nav-prev nav-green">
+							<svg class="nav-prev-icon" width="12" height="8">
+								<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+							</svg>
+						</button>
+						<button type="button" class="products-carousel__nav-next nav nav-next nav-green">
+							<svg class="nav-next-icon" width="12" height="8">
+								<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="home-page__products products-carousel">
+				<div class="products-carousel__container">
+					<div class="products-carousel__title title-section">Переглянуті товари</div>
+					<div class="products-carousel__slider swiper">
+						<div class="products-carousel__wrapper swiper-wrapper">
+							<div class="product-cart swiper-slide">
+								<div class="product-cart__picture">
+									<div class="product-cart__sales">
+										<div class="sale sale-red">Знижка %</div>
+									</div>
+									<a href="#" class="product-cart__img">
+										<picture><source srcset="img/products/01.webp" type="image/webp"><img data-bg="img/products/01.png" src="img/products/01.png" alt="img"></picture>
+									</a>
+								</div>
+								<div class="product-cart__content">
+									<div class="product-cart__head">
+										<div class="product-cart__row">
+											<div>
+												<div class="product-cart__reviews d-flex">
+													<div class="product-cart__stars">
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-gray" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-gray"></use>
+														</svg>
+													</div>
+													<a href="#" class="product-cart__quantity">15 відгуків</a>
+												</div>
+												<div class="status green">У наявності</div>
+											</div>
+											<a href="#" class="product-cart__scales cntr">
+												<svg class="scales" width="26" height="26">
+													<use xlink:href="img/icons/icons.svg#scales-green"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+									</div>
+									<div class="product-cart__main">
+										<div class="product-cart__line">
+											<span>Серія</span>
+											<span>Фронтальний</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Напруга на вході, В</span>
+											<span>230</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Макс. робочий струм, А</span>
+											<span>1.2</span>
+										</div>
+									</div>
+									<div class="product-cart__footer">
+										<div class="product-cart__price d-flex">
+											<div class="product-cart__old-price">5 677,50 ₴</div>
+											<span>5 588,50 ₴</span>
+										</div>
+										<button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+									</div>
+								</div>
+							</div>
+							<div class="product-cart swiper-slide">
+								<div class="product-cart__picture">
+									<a href="#" class="product-cart__img">
+										<picture><source srcset="img/products/02.webp" type="image/webp"><img data-bg="img/products/02.png" src="img/products/02.png" alt="img"></picture>
+									</a>
+								</div>
+								<div class="product-cart__content">
+									<div class="product-cart__head">
+										<div class="product-cart__row">
+											<div>
+												<button type="button" class="product-cart__leave">
+													<svg class="product-cart__leave-icon" width="18" height="18">
+														<use xlink:href="img/icons/icons.svg#star-blue"></use>
+													</svg>
+													<span>Залишити відгук</span>
+												</button>
+												<div class="status red">Під замовлення</div>
+											</div>
+											<a href="#" class="product-cart__scales cntr _active">
+												<svg class="scales" width="26" height="26">
+													<use xlink:href="img/icons/icons.svg#scales-green"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+									</div>
+									<div class="product-cart__main">
+										<div class="product-cart__line">
+											<span>Серія</span>
+											<span>Фронтальний</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Напруга на вході, В</span>
+											<span>230</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Макс. робочий струм, А</span>
+											<span>1.2</span>
+										</div>
+									</div>
+									<div class="product-cart__footer">
+										<div class="product-cart__price d-flex">
+											<span>6 893,33 ₴</span>
+										</div>
+										<button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+									</div>
+								</div>
+							</div>
+							<div class="product-cart swiper-slide">
+								<div class="product-cart__picture">
+									<a href="#" class="product-cart__img">
+										<picture><source srcset="img/products/03.webp" type="image/webp"><img data-bg="img/products/03.png" src="img/products/03.png" alt="img"></picture>
+									</a>
+								</div>
+								<div class="product-cart__content">
+									<div class="product-cart__head">
+										<div class="product-cart__row">
+											<div>
+												<div class="product-cart__reviews d-flex">
+													<div class="product-cart__stars">
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-gray" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-gray"></use>
+														</svg>
+													</div>
+													<a href="#" class="product-cart__quantity">15 відгуків</a>
+												</div>
+												<div class="status green">У наявності</div>
+											</div>
+											<a href="#" class="product-cart__scales cntr">
+												<svg class="scales" width="26" height="26">
+													<use xlink:href="img/icons/icons.svg#scales-green"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+									</div>
+									<div class="product-cart__main">
+										<div class="product-cart__line">
+											<span>Серія</span>
+											<span>Фронтальний</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Напруга на вході, В</span>
+											<span>230</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Макс. робочий струм, А</span>
+											<span>1.2</span>
+										</div>
+									</div>
+									<div class="product-cart__footer">
+										<div class="product-cart__price d-flex">
+											<span>Ціна під запит</span>
+										</div>
+										<button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+									</div>
+								</div>
+							</div>
+							<div class="product-cart swiper-slide">
+								<div class="product-cart__picture">
+									<div class="product-cart__sales">
+										<div class="sale sale-green">Новинка</div>
+										<div class="sale sale-red">Знижка %</div>
+										<div class="sale sale-yellow">Популярне</div>
+									</div>
+									<a href="#" class="product-cart__img">
+										<picture><source srcset="img/products/04.webp" type="image/webp"><img data-bg="img/products/04.png" src="img/products/04.png" alt="img"></picture>
+									</a>
+								</div>
+								<div class="product-cart__content">
+									<div class="product-cart__head">
+										<div class="product-cart__row">
+											<div>
+												<div class="product-cart__reviews d-flex">
+													<div class="product-cart__stars">
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-gray" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-gray"></use>
+														</svg>
+													</div>
+													<a href="#" class="product-cart__quantity">15 відгуків</a>
+												</div>
+												<div class="status green">У наявності</div>
+											</div>
+											<a href="#" class="product-cart__scales cntr">
+												<svg class="scales" width="26" height="26">
+													<use xlink:href="img/icons/icons.svg#scales-green"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+									</div>
+									<div class="product-cart__main">
+										<div class="product-cart__line">
+											<span>Серія</span>
+											<span>Фронтальний</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Напруга на вході, В</span>
+											<span>230</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Макс. робочий струм, А</span>
+											<span>1.2</span>
+										</div>
+									</div>
+									<div class="product-cart__footer">
+										<div class="product-cart__price d-flex">
+											<div class="product-cart__old-price">5 677,50 ₴</div>
+											<span>5 588,50 ₴</span>
+										</div>
+										<button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+									</div>
+								</div>
+							</div>
+							<div class="product-cart swiper-slide">
+								<div class="product-cart__picture">
+									<div class="product-cart__sales">
+										<div class="sale sale-red">Знижка %</div>
+									</div>
+									<a href="#" class="product-cart__img">
+										<picture><source srcset="img/products/04.webp" type="image/webp"><img data-bg="img/products/04.png" src="img/products/04.png" alt="img"></picture>
+									</a>
+								</div>
+								<div class="product-cart__content">
+									<div class="product-cart__head">
+										<div class="product-cart__row">
+											<div>
+												<div class="product-cart__reviews d-flex">
+													<div class="product-cart__stars">
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-gray" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-gray"></use>
+														</svg>
+													</div>
+													<a href="#" class="product-cart__quantity">15 відгуків</a>
+												</div>
+												<div class="status green">У наявності</div>
+											</div>
+											<a href="#" class="product-cart__scales cntr">
+												<svg class="scales" width="26" height="26">
+													<use xlink:href="img/icons/icons.svg#scales-green"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+									</div>
+									<div class="product-cart__main">
+										<div class="product-cart__line">
+											<span>Серія</span>
+											<span>Фронтальний</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Напруга на вході, В</span>
+											<span>230</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Макс. робочий струм, А</span>
+											<span>1.2</span>
+										</div>
+									</div>
+									<div class="product-cart__footer">
+										<div class="product-cart__price d-flex">
+											<span>6 893,33 ₴</span>
+										</div>
+										<button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+									</div>
+								</div>
+							</div>
+							<div class="product-cart swiper-slide">
+								<div class="product-cart__picture">
+									<div class="product-cart__sales">
+										<div class="sale sale-red">Знижка %</div>
+									</div>
+									<a href="#" class="product-cart__img">
+										<picture><source srcset="img/products/02.webp" type="image/webp"><img data-bg="img/products/02.png" src="img/products/02.png" alt="img"></picture>
+									</a>
+								</div>
+								<div class="product-cart__content">
+									<div class="product-cart__head">
+										<div class="product-cart__row">
+											<div>
+												<div class="product-cart__reviews d-flex">
+													<div class="product-cart__stars">
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-yellow" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-yellow"></use>
+														</svg>
+														<svg class="star-gray" width="17" height="17">
+															<use xlink:href="img/icons/icons.svg#star-gray"></use>
+														</svg>
+													</div>
+													<a href="#" class="product-cart__quantity">15 відгуків</a>
+												</div>
+												<div class="status green">У наявності</div>
+											</div>
+											<a href="#" class="product-cart__scales cntr">
+												<svg class="scales" width="26" height="26">
+													<use xlink:href="img/icons/icons.svg#scales-green"></use>
+												</svg>
+											</a>
+										</div>
+										<a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+									</div>
+									<div class="product-cart__main">
+										<div class="product-cart__line">
+											<span>Серія</span>
+											<span>Фронтальний</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Напруга на вході, В</span>
+											<span>230</span>
+										</div>
+										<div class="product-cart__line">
+											<span>Макс. робочий струм, А</span>
+											<span>1.2</span>
+										</div>
+									</div>
+									<div class="product-cart__footer">
+										<div class="product-cart__price d-flex">
+											<span>Ціна під запит</span>
+										</div>
+										<button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-carousel__pagging pagging pagging-white"></div>
+					</div>
+					<div class="products-carousel__nav">
+						<button type="button" class="products-carousel__nav-prev nav nav-prev nav-green">
+							<svg class="nav-prev-icon" width="12" height="8">
+								<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+							</svg>
+						</button>
+						<button type="button" class="products-carousel__nav-next nav nav-next nav-green">
+							<svg class="nav-next-icon" width="12" height="8">
+								<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="application">
+				<picture><source srcset="img/application.webp" type="image/webp"><img src="img/application.jpeg" alt="img" class="application__bg"></picture>
+				<div class="application__container">
+					<div class="application__title title-section title-section-white">Залишить заявку</div>
+					<div class="application__subtitle">Залиште Ваші контактні дані, наш менеджер зв’яжеться з Вами та допоможе</div>
+					<form action="#" class="application__form d-flex form">
+						<input autocomplete="off" type="text" name="username" data-error="Заповніть поле" placeholder="Ваше ім’я" class="input">
+						<input autocomplete="off" type="tel" name="userphone" data-error="Заповніть поле" class="input">
+						<button type="submit" class="application__submit btn btn-green">Відправити заявку</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div data-spollers="991,max" class="footer__container">
+				<div class="footer__column">
+					<a href="#" class="footer__logo">
+						<img src="img/logo.svg" alt="Logo">
+					</a>
+					<ul class="footer__socials socials">
+						<li><a href="#" class="cntr">
+								<svg class="instagram" width="18" height="18">
+									<use xlink:href="img/icons/icons.svg#instagram"></use>
+								</svg>
+							</a></li>
+						<li><a href="#" class="cntr">
+								<svg class="facebook" width="9" height="18">
+									<use xlink:href="img/icons/icons.svg#facebook"></use>
+								</svg>
+							</a></li>
+					</ul>
+					<div data-da=".footer__container, 991" class="footer__info">
+						<p class="footer__lead">Інтернет-магазин розроблений та підтримується веб-студією</p>
+						<img src="img/alicom.svg" alt="alicom" width="128" height="30">
+					</div>
+				</div>
+				<nav class="footer__column">
+					<span data-spoller class="footer__label">Каталог</span>
+					<ul class="footer__menu">
+						<li><a href="#">Привідна техніка</a></li>
+						<li><a href="#">Модульне обладнання</a></li>
+						<li><a href="#">Пуск та захист двигунів</a></li>
+						<li><a href="#">Промислові автоматичні вимикачі</a></li>
+						<li><a href="#">Пристрої керування та сигналізації</a></li>
+						<li><a href="#">Обладнання промислової автоматизації</a></li>
+						<li><a href="#">Реле, таймери, блоки живлення, вимірювальні прилади</a></li>
+						<li><a href="#">Шафи та кліматизація</a></li>
+						<li><a href="#">Високовольтні комірки</a></li>
+						<li><a href="#">Трансформатори</a></li>
+						<li><a href="#">Шафи власного виробництва</a></li>
+						<li><a href="#">Комплектуючі для монтажу</a></li>
+					</ul>
+				</nav>
+				<nav class="footer__column">
+					<span data-spoller class="footer__label">Інформація</span>
+					<ul class="footer__menu">
+						<li><a href="#">Виробники</a></li>
+						<li><a href="#">Умова згоди</a></li>
+						<li><a href="#">Оплата і доставка</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</nav>
+				<div class="footer__column footer__contacts">
+					<span data-spoller class="footer__label">Контакти</span>
+					<div class="footer__links">
+						<a href="mailto:order@uniset.ua" class="footer__link mail">
+							<svg class="footer__link-email" width="17" height="13">
+								<use xlink:href="img/icons/icons.svg#email"></use>
+							</svg>
+							<span>order@uniset.ua</span>
+						</a>
+						<a href="https://maps.app.goo.gl/imeXvUnHy4vcRFzB7" class="footer__link location">
+							<svg class="footer__link-location" width="14" height="20">
+								<use xlink:href="img/icons/icons.svg#location"></use>
+							</svg>
+							<span>м. Біла Церква, вул. Леваневського, 58, оф. 170</span>
+						</a>
+						<a href="tel:0443903303" class="footer__link link-phone">
+							<svg class="link-phone-icon" width="16" height="16">
+								<use xlink:href="img/icons/icons.svg#phone-blue"></use>
+							</svg>
+							<span>044-390-33-03</span>
+						</a>
+						<a href="tel:0733903303" class="footer__link link-phone">
+							<svg class="link-phone-icon" width="16" height="16">
+								<use xlink:href="img/icons/icons.svg#phone-blue"></use>
+							</svg>
+							<span>073-390-33-03</span>
+						</a>
+						<a href="tel:0683903303" class="footer__link link-phone">
+							<svg class="link-phone-icon" width="16" height="16">
+								<use xlink:href="img/icons/icons.svg#phone-blue"></use>
+							</svg>
+							<span>068-390-33-03</span>
+						</a>
+						<a href="#" class="footer__order-call button button-green">Замовити дзвінок</a>
+						<a href="#" class="footer__corpt top-header__corporate button button-blue button-blue-shadow">Корпоративний сайт</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- < Купити в 1 клік >==================================================================================== -->
+	<div id="buy-one-click" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<form action="#" class="popup__content content-body">
+				<button data-close type="button" class="popup__close">
+					<svg class="popup__close-icon" width="14" height="14">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+				<div class="content-body__overlay">
+					<div class="popup__title">Купити в 1 клік</div>
+					<div class="popup__subtitle">Заповніть форму та наш менеджер вам зателефонує</div>
+					<div class="popup__column popup__column_smal">
+						<div class="popup__input">
+							<input type="text" name="username" data-error="Помилка" placeholder="Ваше ім’я" class="input">
+						</div>
+						<div class="popup__input">
+							<input type="tel" name="userphone" data-error="Помилка" class="input">
+						</div>
+						<button type="submit" class="popup__submit btn btn-blue">Оформити замовлення</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- < дякуємо! > ==================================================================================== -->
+	<div id="thanks" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content content-body">
+				<button data-close type="button" class="popup__close">
+					<svg class="popup__close-icon" width="14" height="14">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+				<div class="content-body__overlay">
+					<svg class="popup__icon" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.06748e-05 47.955C0.0450707 21.435 21.5251 -0.0299686 48.0301 3.14082e-05C74.5651 0.0300314 96.0751 21.585 96.0001 48.09C95.9251 74.61 74.4151 96.06 47.9401 96C21.4051 95.94 -0.0449293 74.445 7.06748e-05 47.955ZM48.0301 90.375C71.4001 90.345 90.4201 71.295 90.3751 47.955C90.3151 24.6 71.3551 5.64003 48.0151 5.64003C24.6601 5.62503 5.62507 24.66 5.64007 48.015C5.64007 71.37 24.6901 90.39 48.0301 90.375Z" fill="#50A055" />
+						<path d="M42.2101 57.4655C43.3801 56.2505 44.5051 55.0505 45.6751 53.8955C52.5451 47.0105 59.4151 40.1405 66.3001 33.2705C66.5851 32.9855 66.8551 32.7005 67.1701 32.4455C68.2951 31.5155 69.9151 31.5905 70.9201 32.6105C71.9251 33.6005 72.0301 35.1605 71.1751 36.3005C71.0101 36.5255 70.8151 36.7205 70.6201 36.9155C61.9051 45.6305 53.2051 54.3455 44.4901 63.0455C44.2651 63.2705 44.0251 63.5105 43.7701 63.6905C42.5851 64.5455 41.1301 64.3805 39.9751 63.2255C37.6501 60.9155 35.3401 58.6055 33.0301 56.2805C30.4651 53.7155 27.9001 51.1505 25.3351 48.6005C24.4951 47.7605 24.0601 46.8155 24.3751 45.6155C24.9451 43.4855 27.4951 42.8555 29.1601 44.4455C30.4801 45.7055 31.7401 47.0255 33.0301 48.3155C35.8801 51.1655 38.7151 54.0005 41.5651 56.8505C41.7151 57.0305 41.9101 57.1805 42.2101 57.4655Z" fill="#50A055" />
+					</svg>
+					<div class="popup__title">дякуємо!</div>
+					<div class="popup__subtitle">Ми отримали вашу заявку та скоро зв'яжемося з вами</div>
+					<div class="popup__column popup__column_smal">
+						<button type="submit" class="popup__submit btn btn-blue">Добре</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- < помилка > ==================================================================================== -->
+	<div id="error" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content content-body">
+				<button data-close type="button" class="popup__close">
+					<svg class="popup__close-icon" width="14" height="14">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+				<div class="content-body__overlay">
+					<svg class="popup__title" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.06748e-05 47.955C0.0450707 21.435 21.5251 -0.0299686 48.0301 3.14082e-05C74.5651 0.0300314 96.0751 21.585 96.0001 48.09C95.9251 74.61 74.4151 96.06 47.9401 96C21.4051 95.94 -0.0449293 74.445 7.06748e-05 47.955ZM48.0301 90.375C71.4001 90.345 90.4201 71.295 90.3751 47.955C90.3151 24.6 71.3551 5.64003 48.0151 5.64003C24.6601 5.62503 5.62507 24.66 5.64007 48.015C5.64007 71.37 24.6901 90.39 48.0301 90.375Z" fill="#F84147" />
+						<path d="M45.4686 53.9484C45.4897 55.3301 46.6182 56.4375 47.9998 56.4375C49.3815 56.4375 50.51 55.3195 50.5311 53.9484L51.3748 31.2094C51.4276 30.3445 51.1111 29.5008 50.4994 28.8469C49.8455 28.1508 48.9385 27.75 47.9998 27.75C47.0611 27.75 46.1541 28.1508 45.5002 28.8469C44.8885 29.5008 44.5721 30.3445 44.6248 31.2094L45.4686 53.9484Z" fill="#F84147" />
+						<path d="M48 68.25C49.864 68.25 51.375 66.739 51.375 64.875C51.375 63.011 49.864 61.5 48 61.5C46.136 61.5 44.625 63.011 44.625 64.875C44.625 66.739 46.136 68.25 48 68.25Z" fill="#F84147" />
+					</svg>
+					<div class="popup__title">помилка</div>
+					<div class="popup__subtitle">Щось пішло не так, перевірте правильність введеної інформації</div>
+					<div class="popup__column popup__column_smal">
+						<button type="submit" class="popup__submit btn btn-blue">Добре</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- < товар у кошику > ==================================================================================== -->
+	<div id="product-in-basket" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content content-body content-body_width">
+				<button data-close type="button" class="popup__close">
+					<svg class="popup__close-icon" width="14" height="14">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+				<div class="content-body__overlay">
+					<div class="popup__title">товар у кошику</div>
+					<div class="popup__subtitle">Ваш товар успішно додано до кошика</div>
+					<div class="popup__column">
+						<div class="content-body__row">
+							<div class="content-body__product product-popup">
+								<div class="product-popup__info">
+									<div class="product-popup__img">
+										<picture><source srcset="img/order-page/2.webp" type="image/webp"><img src="img/order-page/2.png" alt="img"></picture>
+									</div>
+									<div class="product-popup__column">
+										<a href="#" class="product-popup__title">Пристрій плавного пуску VLT Soft Starter MCD 600</a>
+										<span class="product-popup__article">Артикул: 136G8759</span>
+									</div>
+								</div>
+								<div class="product-popup__action">
+									<div data-quantity class="quantity">
+										<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+										<div class="quantity__input">
+											<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+									</div>
+									<div class="product-popup__price">60 823,33 ₴</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-body__action">
+							<a href="#" class="content-body__order btn btn-blue">Оформити замовлення</a>
+							<a href="#" class="content-body__continue btn">Продовжити покупки</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- < Залишити відгук > ==================================================================================== -->
+	<div id="leave-review" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content content-body">
+				<button data-close type="button" class="popup__close">
+					<svg class="popup__close-icon" width="14" height="14">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+				<div class="content-body__overlay">
+					<div class="popup__title">Залишити відгук</div>
+					<div class="popup__column popup__column_big review-content">
+						<div class="review-content__input">
+							<label for="" class="review-content__label">Ваше ім’я*</label>
+							<input type="text" name="username" data-error="Помилка" class="input">
+						</div>
+						<div class="review-content__input">
+							<label for="" class="review-content__label">Відгук*</label>
+							<textarea name="review" placeholder="Напишіть, що думаєте про товар..."></textarea>
+						</div>
+						<div class="rating">
+							<div class="rating__label">Оцініть товар</div>
+							<div class="rating__row">
+								<input type="radio" id="star5" name="rating" value="5">
+								<label for="star5">
+									<svg id="star-gray" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" fill="#ECECEC" />
+									</svg>
+								</label>
+								<input type="radio" id="star4" name="rating" value="4">
+								<label for="star4">
+									<svg id="star-gray" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" fill="#ECECEC" />
+									</svg>
+								</label>
+								<input type="radio" id="star3" name="rating" value="4">
+								<label for="star3">
+									<svg id="star-gray" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" fill="#ECECEC" />
+									</svg>
+								</label>
+								<input type="radio" id="star2" name="rating" value="4">
+								<label for="star2">
+									<svg id="star-gray" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" fill="#ECECEC" />
+									</svg>
+								</label>
+								<input type="radio" id="star1" name="rating" value="4">
+								<label for="star1">
+									<svg id="star-gray" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" fill="#ECECEC" />
+									</svg>
+								</label>
+							</div>
+						</div>
+						<button type="submit" class="review-content__submit btn btn-blue">Оформити замовлення</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- < Відео > ==================================================================================== -->
+	<div id="po-video" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20231121121342" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20231121121342"></script>
+	<script src="js/app.min.js?_v=20231121121342"></script>
+</body>
+
+</html>

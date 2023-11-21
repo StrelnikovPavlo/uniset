@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>404</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20231121121342" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231121121342">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Інтернет магазин UNISET">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container d-flex">
+					<btn type="button" class="icon-menu"><span></span></btn>
+					<a href="#" class="top-header__logo">
+						<img src="img/logo.svg" alt="Логотип компанії" width="130" height="50">
+					</a>
+					<a data-popup="#thanks" data-da=".top-header__menu-mobile, 991" href="#" class="top-header__corporate btn btn-blue">
+						<svg class="top-header__corporate-icon" width="26" height="24">
+							<use xlink:href="img/icons/icons.svg#arrow-left-white"></use>
+						</svg>
+						<span>Корпоративний сайт</span>
+					</a>
+					<div data-da=".top-header__menu-mobile, 991, 3" class="top-header__call">
+						<a href="tel:0733903303" class="top-header__phone link-phone">
+							<svg class="link-phone-icon" width="16" height="16">
+								<use xlink:href="img/icons/icons.svg#phone-blue"></use>
+							</svg>
+							<span>073-390-33-03</span>
+						</a>
+						<a href="tel:0683903303" class="top-header__phone link-phone">
+							<svg class="link-phone-icon" width="16" height="16">
+								<use xlink:href="img/icons/icons.svg#phone-blue"></use>
+							</svg>
+							<span>068-390-33-03</span>
+						</a>
+						<a data-popup="#error" href="#" class="top-header__order-call">Замовити дзвінок</a>
+					</div>
+					<nav class="header__menu menu">
+						<ul data-da="._menu, 991, 1" class="menu__list">
+							<li><a href="#">Виробники</a></li>
+							<li><a href="#">Умова згоди</a></li>
+							<li><a href="#">Оплата і доставка</a></li>
+							<li><a href="#">Контакти</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="top-header__search">
+						<svg class="bottom-header__search-icon" width="26" height="26">
+							<use xlink:href="img/icons/icons.svg#search"></use>
+						</svg>
+					</button>
+					<div class="top-header__lang lang">
+						<div class="lang__selected">
+							<span>UA</span>
+							<svg class="lang__selected-icon" width="10" height="6">
+								<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+							</svg>
+						</div>
+						<ul class="lang__dropdown">
+							<li><a href="#" class="_active">UA</a></li>
+							<li><a href="#">RU</a></li>
+						</ul>
+					</div>
+					<div data-spollers="991,max" class="top-header__menu-mobile mobile-menu">
+						<div class="mobile-menu__head d-flex">
+							<span>Меню</span>
+							<button type="button" class="mobile-menu__close cntr">
+								<svg class="mobile-menu__close-icon" width="14" height="14">
+									<use xlink:href="img/icons/icons.svg#close"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="mobile-menu__spoller _catalog">
+							<span data-spoller class="mobile-menu__label d-flex">
+								Каталог
+								<svg class="mobile-menu__label-icon" width="10" height="8">
+									<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+								</svg>
+							</span>
+							<span></span>
+						</div>
+						<div class="mobile-menu__spoller _menu">
+							<span data-spoller class="mobile-menu__label d-flex">
+								Додаткова інформація
+								<svg class="mobile-menu__label-icon" width="10" height="8">
+									<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+								</svg>
+							</span>
+							<span></span>
+						</div>
+						<ul class="mobile-menu__socials socials">
+							<li>
+								<a href="#" class="cntr">
+									<svg class="instagram" width="18" height="18">
+										<use xlink:href="img/icons/icons.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="cntr">
+									<svg class="facebook" width="9" height="18">
+										<use xlink:href="img/icons/icons.svg#facebook"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom bottom-header">
+				<div class="bottom-header__container d-flex">
+					<div class="header-catalog">
+						<button type="button" class="header-catalog__button d-flex">
+							<svg class="header-catalog__button-icon-left" width="16" height="15">
+								<use xlink:href="img/icons/icons.svg#catalog"></use>
+							</svg>
+							<span>Каталог товарів</span>
+							<svg class="header-catalog__button-icon-right" width="10" height="8">
+								<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+							</svg>
+						</button>
+						<ul data-spollers="991,max" data-da="._catalog, 991, 1" class="header-catalog__list">
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Привідна техніка
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Модульне обладнання
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Пуск та захист двигунів
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Промислові автоматичні вимикачі
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Пристрої керування та сигналізації
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Обладнання промислової автоматизації
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Реле, таймери, блоки живлення, вимірювальні прилади
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Шафи та кліматизація
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Високовольтні комірки
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-catalog__category">
+								<span data-spoller>
+									Трансформатори
+									<svg class="header-catalog__category-icon" width="10" height="8">
+										<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+									</svg>
+								</span>
+								<div class="header-catalog__overlay">
+									<ul class="header-catalog__items">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі BZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі NZM та аксесуари</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Вимикачі – роз’єднувачі N, PN</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Повітряні автоматичні вимикачі IZMX</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+												<span>Автоматичні вимикачі PDE та аксесуари</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom-header__brands brands-header">
+						<button type="button" class="brands-header__button d-flex">
+							<span>Бренди</span>
+							<svg class="brands-header__button-icon" width="10" height="8">
+								<use xlink:href="img/icons/icons.svg#lang-arrow"></use>
+							</svg>
+						</button>
+						<ul class="brands-header__items">
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/danfuss.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/eaton.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/emtas.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/morek.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/oztekfen.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/ome.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/quick.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/rittal.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/sew.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/unimotor.svg" alt="img"></a>
+							</li>
+							<li>
+								<a href="#" class="cntr"><img src="img/brangs_header/weidmuller.svg" alt="img"></a>
+							</li>
+						</ul>
+					</div>
+					<form data-da=".header__top, 991" action="#" class="bottom-header__search search-header">
+						<div class="search-header__form d-flex">
+							<input type="text" name="search">
+							<button type="submit">
+								<svg class="bottom-header__search-icon" width="26" height="26">
+									<use xlink:href="img/icons/icons.svg#search"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="search-header__result">
+							<a href="#" class="search-header__product">
+								<div class="search-header__img">
+									<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+								</div>
+								<div class="search-header__title">Радіатор сталевий Krafter 22 тип 500x1000 нижнє підключення</div>
+								<span class="search-header__price">4 781 ₴</span>
+							</a>
+							<a href="#" class="search-header__product">
+								<div class="search-header__img">
+									<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="img"></picture>
+								</div>
+								<div class="search-header__title">Радіатор сталевий Krafter 22 тип 500x1000 нижнє підключення</div>
+								<span class="search-header__price">4 781 ₴</span>
+							</a>
+						</div>
+					</form>
+					<a data-popup="#product-in-basket" href="#" class="bottom-header__scales cntr">
+						<span class="cntr">1</span>
+						<svg class="bottom-header__scales-icon" width="26" height="26">
+							<use xlink:href="img/icons/icons.svg#scales"></use>
+						</svg>
+					</a>
+					<a data-popup="#leave-review" href="#" class="bottom-header__cart cntr">
+						<span class="cntr">1</span>
+						<svg class="bottom-header__cart-icon" width="26" height="26">
+							<use xlink:href="img/icons/icons.svg#cart"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</header>
+		<main class="error-page">
+			<div class="error-page__img">
+				<picture><source srcset="img/404.webp" type="image/webp"><img src="img/404.png" alt="404"></picture>
+			</div>
+			<div class="error-page__content">
+				<span class="error-page__label">Ой...</span>
+				<p class="error-page__text">Здається, щось пішло не так, ми не знайшли потрібну сторінку. Спробуйте перезавантажити сторінку або поверніться до головної.</p>
+				<a href="#" class="error-page__home btn btn-blue">На головну</a>
+			</div>
+		</main>
+		<footer class="footer">
+			<div data-spollers="991,max" class="footer__container">
+				<div class="footer__column">
+					<a href="#" class="footer__logo">
+						<img src="img/logo.svg" alt="Logo">
+					</a>
+					<ul class="footer__socials socials">
+						<li><a href="#" class="cntr">
+								<svg class="instagram" width="18" height="18">
+									<use xlink:href="img/icons/icons.svg#instagram"></use>
+								</svg>
+							</a></li>
+						<li><a href="#" class="cntr">
+								<svg class="facebook" width="9" height="18">
+									<use xlink:href="img/icons/icons.svg#facebook"></use>
+								</svg>
+							</a></li>
+					</ul>
+					<div data-da=".footer__container, 991" class="footer__info">
+						<p class="footer__lead">Інтернет-магазин розроблений та підтримується веб-студією</p>
+						<img src="img/alicom.svg" alt="alicom" width="128" height="30">
+					</div>
+				</div>
+				<nav class="footer__column">
+					<span data-spoller class="footer__label">Каталог</span>
+					<ul class="footer__menu">
+						<li><a href="#">Привідна техніка</a></li>
+						<li><a href="#">Модульне обладнання</a></li>
+						<li><a href="#">Пуск та захист двигунів</a></li>
+						<li><a href="#">Промислові автоматичні вимикачі</a></li>
+						<li><a href="#">Пристрої керування та сигналізації</a></li>
+						<li><a href="#">Обладнання промислової автоматизації</a></li>
+						<li><a href="#">Реле, таймери, блоки живлення, вимірювальні прилади</a></li>
+						<li><a href="#">Шафи та кліматизація</a></li>
+						<li><a href="#">Високовольтні комірки</a></li>
+						<li><a href="#">Трансформатори</a></li>
+						<li><a href="#">Шафи власного виробництва</a></li>
+						<li><a href="#">Комплектуючі для монтажу</a></li>
+					</ul>
+				</nav>
+				<nav class="footer__column">
+					<span data-spoller class="footer__label">Інформація</span>
+					<ul class="footer__menu">
+						<li><a href="#">Виробники</a></li>
+						<li><a href="#">Умова згоди</a></li>
+						<li><a href="#">Оплата і доставка</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</nav>
+				<div class="footer__column footer__contacts">
+					<span data-spoller class="footer__label">Контакти</span>
+					<div class="footer__links">
+						<a href="mailto:order@uniset.ua" class="footer__link mail">
+							<svg class="footer__link-email" width="17" height="13">
+								<use xlink:href="img/icons/icons.svg#email"></use>
+							</svg>
+							<span>order@uniset.ua</span>
+						</a>
+						<a href="https://maps.app.goo.gl/imeXvUnHy4vcRFzB7" class="footer__link location">
+							<svg class="footer__link-location" width="14" height="20">
+								<use xlink:href="img/icons/icons.svg#location"></use>
+							</svg>
+							<span>м. Біла Церква, вул. Леваневського, 58, оф. 170</span>
+						</a>
+						<a href="tel:0443903303" class="footer__link link-phone">
+							<svg class="link-phone-icon" width="16" height="16">
+								<use xlink:href="img/icons/icons.svg#phone-blue"></use>
+							</svg>
+							<span>044-390-33-03</span>
+						</a>
+						<a href="tel:0733903303" class="footer__link link-phone">
+							<svg class="link-phone-icon" width="16" height="16">
+								<use xlink:href="img/icons/icons.svg#phone-blue"></use>
+							</svg>
+							<span>073-390-33-03</span>
+						</a>
+						<a href="tel:0683903303" class="footer__link link-phone">
+							<svg class="link-phone-icon" width="16" height="16">
+								<use xlink:href="img/icons/icons.svg#phone-blue"></use>
+							</svg>
+							<span>068-390-33-03</span>
+						</a>
+						<a href="#" class="footer__order-call button button-green">Замовити дзвінок</a>
+						<a href="#" class="footer__corpt top-header__corporate button button-blue button-blue-shadow">Корпоративний сайт</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20231121121342" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20231121121342"></script>
+	<script src="js/app.min.js?_v=20231121121342"></script>
+</body>
+
+</html>
